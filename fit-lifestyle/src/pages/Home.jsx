@@ -1,32 +1,29 @@
-import hero from "../assets/images/hero.png";
+import Why from "../components/Why";
+import About from "../components/About";
+import Quotes from "../components/Quotes";
+import Hero from "../components/Hero";
+import Faq from "../components/Faq";
+import Newsletter from "../components/NewsLetter";
+import backgroundImage from "../assets/images/background-map.png";
 
 const Home = () => {
   return (
-    <>
-      <div className="container mx-auto">
-        <div className="flex items-center py-12">
-          <div className="w-1/2">
-            <div className="flex flex-col max-w-2xl">
-              <h1 className="text-6xl font-extrabold text-['#172048'] leading-tight">
-                Jadikan Hidupmu Lebih Sehat dengan{" "}
-                <span className="text-blue-400">FitLifestyle</span>
-              </h1>
-              <p>
-                FitLifestyle memudahkan Anda mengontrol langkah, detak jantung,
-                dan kalori Anda. Bergabunglah dan mulailah hidup sehat hari ini!
-              </p>
-              <a href="#">Dashboard Activity</a>
-              <div className="p-5 rounded-xl bg-blue-100">
-                200+ <span>User Active</span>
-              </div>
-            </div>
-          </div>
-          <div className="w-1/2">
-            <img src={hero} alt="" />
-          </div>
-        </div>
+    <div>
+      <Hero />
+      <Why />
+      <div
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <About />
+        <Quotes />
+        <Faq />
       </div>
-    </>
+      <Newsletter />
+    </div>
   );
 };
 

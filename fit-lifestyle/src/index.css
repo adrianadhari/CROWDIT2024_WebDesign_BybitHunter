@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    @apply font-quicksand;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #4A72FF 0%, #6180EE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* styles.css atau tailwind.css */
+.indent-first-line {
+    text-indent: 2rem;
+    /* Sesuaikan ukuran indentasi sesuai kebutuhan */
+}
+
+/* styles.css atau tailwind.css */
+.indent-paragraphs {
+    text-indent: 2rem;
+    /* Sesuaikan ukuran indentasi sesuai kebutuhan */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
