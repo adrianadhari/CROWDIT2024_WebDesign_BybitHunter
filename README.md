@@ -8,6 +8,6 @@ Hosted on https://fit-lifestyle.vercel.app/
 
 ### How to Use?
 1. Type "git clone https://github.com/adrianadhari/CROWDIT2024_WebDesign_BybitHunter.git" and enter.
-2. Type "cd CROWDIT2024_WebDesign_BybitHunter/fit-lifestylew" and enter.
+2. Type "cd CROWDIT2024_WebDesign_BybitHunter/fit-lifestyle" and enter.
 3. Type "npm run dev" and enter.
 4. Open "http://localhost:5173/" in your browser.
