@@ -2,11 +2,7 @@ import faq from "../assets/images/faq.png";
 
 const Faq = () => {
   return (
-    <div
-      className="container mx-auto px-10 lg:py-32 py-20"
-      data-aos="fade-up"
-      data-aos-duration="2000"
-    >
+    <div className="container mx-auto px-10 lg:py-32 py-20">
       <div className="flex items-center lg:flex-row flex-col-reverse">
         <div className="lg:w-1/2 w-full ">
           <div className="flex flex-col space-y-4 mb-9 lg:mt-0 mt-7 lg:text-start text-center">
