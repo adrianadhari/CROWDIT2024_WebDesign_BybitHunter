@@ -28,10 +28,14 @@ const cards = [
 // Card component
 const Card = ({ image, title, description }) => {
   return (
-    <div className="bg-white flex flex-col justify-center items-center px-8 py-14 shadow-lg rounded-3xl space-y-11 text-center hover:scale-105 cursor-pointer transition-all duration-200 ease-in">
-      <img src={image} alt={title} className="mb-4" />
-      <h3 className="text-2xl font-bold text-[#172048]">{title}</h3>
-      <p className="font-medium text-[#A8A8A8] text-lg">{description}</p>
+    <div className="bg-white flex flex-col justify-center items-center px-8 lg:py-14 py-6 shadow-lg rounded-3xl lg:space-y-11 space-y-2 text-center hover:scale-105 cursor-pointer transition-all duration-200 ease-in">
+      <img src={image} alt={title} className="lg:mb-4 mb-0 lg:w-auto w-12" />
+      <h3 className="lg:text-2xl text-base font-bold text-[#172048]">
+        {title}
+      </h3>
+      <p className="font-medium text-[#A8A8A8] lg:text-lg text-sm ">
+        {description}
+      </p>
     </div>
   );
 };
@@ -39,7 +43,7 @@ const Card = ({ image, title, description }) => {
 const CardList = () => {
   return (
     <div className="flex justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {cards.map((card, index) => (
           <Card
             key={index}

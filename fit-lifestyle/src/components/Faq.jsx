@@ -2,14 +2,14 @@ import faq from "../assets/images/faq.png";
 
 const Faq = () => {
   return (
-    <div className="container mx-auto px-10 py-32">
-      <div className="flex items-center">
-        <div className="w-1/2 ">
-          <div className="flex flex-col space-y-4 mb-9">
-            <h3 className="font-bold text-5xl text-[#172048]">
+    <div className="container mx-auto px-10 lg:py-32 py-20">
+      <div className="flex items-center lg:flex-row flex-col-reverse">
+        <div className="lg:w-1/2 w-full ">
+          <div className="flex flex-col space-y-4 mb-9 lg:mt-0 mt-7 lg:text-start text-center">
+            <h3 className="font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-[#172048]">
               Frequently Asked Questions
             </h3>
-            <p className="text-3xl text-[#172048] font-medium">
+            <p className="xl:text-2xl lg:text-xl md:text-lg text-base text-[#172048] font-medium">
               General Question
             </p>
           </div>
@@ -23,7 +23,7 @@ const Faq = () => {
                   aria-expanded="true"
                   aria-controls="accordion-collapse-body-1"
                 >
-                  <span className="font-medium text-[#777777] text-xl">
+                  <span className="font-medium text-[#777777] lg:text-xl md:text-lg sm:text-base text-sm">
                     How does FitLifestyle track my steps ?
                   </span>
                   <svg
@@ -69,7 +69,7 @@ const Faq = () => {
                   aria-expanded="true"
                   aria-controls="accordion-collapse-body-2"
                 >
-                  <span className="font-medium text-[#777777] text-xl">
+                  <span className="font-medium text-[#777777] lg:text-xl md:text-lg sm:text-base text-sm">
                     Is my personal data safe with FitLifestyle ?
                   </span>
                   <svg
@@ -116,7 +116,7 @@ const Faq = () => {
                   aria-expanded="true"
                   aria-controls="accordion-collapse-body-3"
                 >
-                  <span className="font-medium text-[#777777] text-xl">
+                  <span className="font-medium text-[#777777] lg:text-xl md:text-lg sm:text-base text-sm">
                     Can FitLifestyle help me monitor my heart health ?
                   </span>
                   <svg
@@ -162,7 +162,7 @@ const Faq = () => {
                   aria-expanded="true"
                   aria-controls="accordion-collapse-body-4"
                 >
-                  <span className="font-medium text-[#777777] text-xl">
+                  <span className="font-medium text-[#777777] lg:text-xl md:text-lg sm:text-base text-sm">
                     How does FitLifestyle personalize my experience ?
                   </span>
                   <svg
@@ -205,7 +205,7 @@ const Faq = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2  flex justify-center">
+        <div className="lg:w-1/2 w-full flex justify-center">
           <img src={faq} alt="FAQ" className="w-1/2 " />
         </div>
       </div>
