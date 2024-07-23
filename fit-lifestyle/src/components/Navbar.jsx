@@ -18,7 +18,7 @@ const mobileMenuItems = [
   { label: "Dashboard", href: "/dashboard" },
 ];
 
-export default function Header() {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
