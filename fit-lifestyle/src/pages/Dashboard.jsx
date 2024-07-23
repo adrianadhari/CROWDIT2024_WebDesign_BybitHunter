@@ -5,6 +5,7 @@ import CircularProgress from "../components/CircularProgress";
 import BarChart from "../components/BarChart";
 import Char from "../components/Char";
 import NavbarDashboard from "../components/NavbarDashboard";
+import Newsletter from "../components/NewsLetter";
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
@@ -139,6 +140,7 @@ const Dashboard = () => {
           </>
         )}
       </div>
+      <Newsletter />
     </>
   );
 };

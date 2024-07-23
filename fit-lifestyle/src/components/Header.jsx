@@ -23,7 +23,7 @@ export default function Header() {
     <header>
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-7 lg:px-10"
+        className="container mx-auto flex items-center justify-between p-7 lg:px-10"
       >
         <div className="flex lg:flex-1">
           <Link to={"/"} className="flex space-x-3 items-center">

@@ -8,8 +8,8 @@ export default function Article() {
   return (
     <>
       <Header />
-      <div className="py-16 mx-auto max-w-7xl">
-        <div className="text-start mb-8 px-6 lg:px-8">
+      <div className="container py-16 px-10 mx-auto">
+        <div className="text-start mb-8">
           <h1 className="text-5xl font-bold text-custom-Primary">Article</h1>
           <p className="text-base pt-2  text-custom-SemiBlack">
             &quot;Explore our recent articles and get inspired by new insights
@@ -18,7 +18,7 @@ export default function Article() {
         </div>
 
         {/* Kontainer untuk tombol pencarian dan filter kategori */}
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-8">
+        <div className="mx-auto  pb-8">
           <div className="flex justify-between items-center">
             {/* Tombol Pencarian */}
             <div className="relative w-full max-w-md">
