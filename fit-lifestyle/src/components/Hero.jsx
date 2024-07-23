@@ -3,6 +3,7 @@ import users from "../assets/images/users-active.png";
 import blob from "../assets/images/blob2.png";
 import Navbar from "./Navbar";
 import CountUp from "react-countup";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -35,12 +36,12 @@ const Hero = () => {
                 rate and calories. Join and start living healthy today!
               </p>
               <div className="my-16">
-                <a
-                  href="/dashboard"
+                <Link
+                  href={"/dashboard"}
                   className="bg-[#4A72FF] lg:py-3 lg:px-14 py-2 px-10 text-white rounded-3xl font-bold xl:text-2xl lg:text-xl md:text-lg text-base tracking-wide hover:opacity-90"
                 >
                   Activity
-                </a>
+                </Link>
               </div>
               <div className="lg:py-5 lg:px-10 py-3 px-7 rounded-2xl bg-[#E8ECF9] flex flex-col w-fit space-y-4 mx-auto lg:mx-0">
                 <p className="font-semibold lg:text-2xl text-lg text-[#172048]">

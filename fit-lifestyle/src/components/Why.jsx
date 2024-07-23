@@ -12,7 +12,7 @@ const Why = () => {
         <div
           className="flex flex-col space-y-3"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h2 className="font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl md:text-start text-center text-[#172048]">
             Why Choose FitLifestyle

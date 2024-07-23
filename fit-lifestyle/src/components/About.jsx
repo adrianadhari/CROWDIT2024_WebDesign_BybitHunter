@@ -43,10 +43,9 @@ const About = () => {
   return (
     <div
       className="container mx-auto px-10 md:py-32 py-20 md:mt-14 mt-0"
-      id="about"
       data-aos="fade-right"
       data-aos-duration="1000"
-      data-aos-delay="2000"
+      data-aos-delay="1500"
     >
       <div className="flex md:flex-row flex-col-reverse ">
         <div className="xl:w-1/2 md:w-2/3 w-full">

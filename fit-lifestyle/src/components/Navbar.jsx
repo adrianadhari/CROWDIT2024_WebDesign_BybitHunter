@@ -8,13 +8,11 @@ import { Link } from "react-router-dom";
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "Article", href: "/article" },
-  { label: "About", href: "#about" },
 ];
 
 const mobileMenuItems = [
   { label: "Home", href: "/" },
   { label: "Article", href: "/article" },
-  { label: "About", href: "#about" },
   { label: "Dashboard", href: "/dashboard" },
 ];
 
