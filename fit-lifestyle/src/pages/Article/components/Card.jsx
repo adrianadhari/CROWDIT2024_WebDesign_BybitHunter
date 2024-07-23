@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Posts from "../../../Data/Posts";
 
 export default function Card() {
@@ -19,19 +20,19 @@ export default function Card() {
                 <time dateTime={post.datetime} className="text-gray-500">
                   {post.date}
                 </time>
-                <a
-                  href={`/category/${post.category.slug}`}
+                <Link
+                  to={`/category/${post.category.slug}`}
                   className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                 >
                   {post.category.title}
-                </a>
+                </Link>
               </div>
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={`/article/${post.slug}`}>
+                  <Link to={`/article/${post.slug}`}>
                     <span className="absolute inset-0" />
                     {post.title}
-                  </a>
+                  </Link>
                 </h3>
                 <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                   {post.description}
@@ -45,10 +46,10 @@ export default function Card() {
                 />
                 <div className="text-sm leading-6">
                   <p className="font-semibold text-gray-900">
-                    <a href={post.author.href}>
+                    <Link to={post.author.href}>
                       <span className="absolute inset-0" />
                       {post.author.name}
-                    </a>
+                    </Link>
                   </p>
                   <p className="text-gray-600">{post.author.role}</p>
                 </div>
