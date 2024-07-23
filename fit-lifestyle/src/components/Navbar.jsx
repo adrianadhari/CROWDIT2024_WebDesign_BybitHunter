@@ -1,4 +1,3 @@
-"use client";
 import logo from "../assets/images/logo.png";
 
 import { useState } from "react";
