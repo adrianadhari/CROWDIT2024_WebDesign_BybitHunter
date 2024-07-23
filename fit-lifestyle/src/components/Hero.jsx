@@ -21,7 +21,11 @@ const Hero = () => {
         />
         <div className="flex items-center lg:py-12">
           <div className="lg:w-1/2 w-full lg:text-left text-center">
-            <div className="flex flex-col lg:max-w-3xl w-full">
+            <div
+              className="flex flex-col lg:max-w-3xl w-full "
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <h1 className="font-nunito xl:text-6xl lg:text-4xl md:text-3xl text-2xl font-extrabold text-[#172048] leading-tight mb-6">
                 Make Your Life Healthier with{" "}
                 <span className="gradient-text">FitLifestyle</span>
@@ -53,7 +57,11 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 w-0">
+          <div
+            className="lg:w-1/2 w-0"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <img src={hero} alt="" className="ps-14 w-full" />
           </div>
         </div>

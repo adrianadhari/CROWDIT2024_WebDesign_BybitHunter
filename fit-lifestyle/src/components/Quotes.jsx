@@ -2,7 +2,11 @@ import quotes1 from "../assets/images/quotes1.png";
 
 const Quotes = () => {
   return (
-    <div className="container mx-auto px-10 lg:py-32 py-20">
+    <div
+      className="container mx-auto px-10 lg:py-32 py-20"
+      data-aos="fade-left"
+      data-aos-duration="2000"
+    >
       <div className="flex md:flex-row flex-col items-end lg:justify-around ">
         <div>
           <div className="flex flex-col space-y-4 md:text-start text-center">
