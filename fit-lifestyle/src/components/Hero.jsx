@@ -37,7 +37,7 @@ const Hero = () => {
               </p>
               <div className="my-16">
                 <Link
-                  href={"/dashboard"}
+                  to={"/dashboard"}
                   className="bg-[#4A72FF] lg:py-3 lg:px-14 py-2 px-10 text-white rounded-3xl font-bold xl:text-2xl lg:text-xl md:text-lg text-base tracking-wide hover:opacity-90"
                 >
                   Activity
