@@ -12,7 +12,7 @@ const Dashboard = () => {
     <>
       <NavbarDashboard />
       <div className="container mx-auto px-10 py-10">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row bg-red-500">
           <div className="w-2/5 ">
             <h1 className="text-5xl font-bold">Dashboard</h1>
             <p className="text-slate-500 text-3xl">Activities</p>

@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.png";
 import { useState } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   { label: "Home", href: "/" },
@@ -27,12 +28,12 @@ export default function Navbar() {
         className="container mx-auto flex  items-center justify-between p-7 lg:px-10"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="flex space-x-3 items-center">
+          <Link to={"/"} className="flex space-x-3 items-center">
             <img src={logo} alt="Fit Lifestyle" />
             <span className="font-bold color-[#172048] text-2xl">
               FitLifestyle
             </span>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -46,22 +47,22 @@ export default function Navbar() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           {menuItems.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="/dashboard"
+          <Link
+            to={"/dashboard"}
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Dashboard <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog
@@ -72,12 +73,12 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/" className="flex items-center space-x-3">
+            <Link to={"/"} className="flex items-center space-x-3">
               <img src={logo} alt="Fit Lifestyle" />
               <span className="font-bold color-[#172048] text-2xl">
                 FitLifestyle
               </span>
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -91,13 +92,13 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {mobileMenuItems.map((item) => (
-                  <a
+                  <Link
                     key={item.label}
-                    href={item.href}
+                    to={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

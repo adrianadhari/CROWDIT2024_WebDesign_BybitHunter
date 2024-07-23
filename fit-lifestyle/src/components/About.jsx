@@ -45,7 +45,7 @@ const About = () => {
       className="container mx-auto px-10 md:py-32 py-20 md:mt-14 mt-0"
       id="about"
     >
-      <div className="flex items-center md:flex-row flex-col-reverse ">
+      <div className="flex md:flex-row flex-col-reverse ">
         <div className="xl:w-1/2 md:w-2/3 w-full">
           <div className="flex items-center md:justify-start md:mt-0 mt-12 justify-center">
             <button
