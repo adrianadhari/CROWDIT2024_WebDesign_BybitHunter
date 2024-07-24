@@ -51,7 +51,8 @@ const Dashboard = () => {
               <button
                 onClick={() => setShowModal(true)}
                 className="bg-blue-500 px-6 py-2 text-white rounded-full text-right h-12 mt-4 lg:mt-0"
-                type="button">
+                type="button"
+              >
                 Set Your Menu
               </button>
             </div>
@@ -78,7 +79,8 @@ const Dashboard = () => {
                 <div className="w-full h-96 bg-white shadow-xl p-8 rounded-xl">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7379.518211882179!2d106.79780181657307!3d-6.5995253441155475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c191f0a555%3A0xe6e757cf32829f41!2sKesatuan%20Economics%20Institute!5e0!3m2!1sen!2sid!4v1721636102786!5m2!1sen!2sid"
-                    className="w-full h-80 rounded-lg"></iframe>
+                    className="w-full h-80 rounded-lg"
+                  ></iframe>
                 </div>
                 <div className="w-full shadow-xl bg-white rounded-2xl my-10">
                   <div className="flex py-4 px-8 justify-between items-center ">
@@ -107,8 +109,8 @@ const Dashboard = () => {
                   </div>
                   <div className="relative p-6 flex-auto">
                     <div className="my-4 flex text-blueGray-500 text-lg leading-relaxed">
-                      <p className="w-2/3">choose your healthy menu</p>
-                      <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                      <p className="w-2/3">Choose your healthy menu</p>
+                      <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option disabled selected>
                           Select
                         </option>
@@ -119,7 +121,7 @@ const Dashboard = () => {
                     </div>
                     <div className="my-4 flex text-blueGray-500 text-lg leading-relaxed">
                       <p className="w-2/3">Choose your meal time</p>
-                      <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                      <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option disabled selected>
                           Select
                         </option>
@@ -134,13 +136,15 @@ const Dashboard = () => {
                     <button
                       className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => setShowModal(false)}>
+                      onClick={() => setShowModal(false)}
+                    >
                       Close
                     </button>
                     <button
                       className="bg-blue-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => setShowModal(false)}>
+                      onClick={() => setShowModal(false)}
+                    >
                       Save Changes
                     </button>
                   </div>

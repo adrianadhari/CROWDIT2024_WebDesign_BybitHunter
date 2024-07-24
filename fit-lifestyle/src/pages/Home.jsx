@@ -8,7 +8,7 @@ import backgroundImage from "../assets/images/background-map.png";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Why />
       <div

@@ -27,9 +27,9 @@ const Quotes = () => {
               </div>
               <div className="text-white lg:mt-10 mt-5 md:text-start text-center">
                 <p className="font-medium">
-                  &quot;Lari rutin meningkatkan kebugaran, menurunkan risiko
-                  penyakit jantung, mengontrol berat badan, dan memperkuat otot.
-                  Mulailah sekarang untuk kesehatan optimal!&quot;
+                  &quot;Regular running improves fitness, reduces the risk of
+                  heart disease, controls weight, and strengthens muscles. Get
+                  started now for optimal health!&quot;
                 </p>
               </div>
             </div>
