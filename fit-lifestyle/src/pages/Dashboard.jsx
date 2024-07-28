@@ -6,6 +6,8 @@ import BarChart from "../components/BarChart";
 import Char from "../components/Char";
 import NavbarDashboard from "../components/NavbarDashboard";
 import Newsletter from "../components/NewsLetter";
+import { FaGear } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
@@ -38,17 +40,24 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-3/5">
+          <div className="w-full lg:w-3/5 relative z-99">
             <div className="flex flex-col lg:flex-row justify-between mb-10">
-              <h1 className="font-bold text-2xl lg:text-4xl">
-                Activities <br />
-                <span className="text-lg lg:text-2xl font-normal text-slate-500">
-                  Record your Activity
-                </span>
-              </h1>
+              <div className="flex space-x-5">
+                <Link to="#" className="mt-1 cursor-pointer">
+                  <FaGear className="text-[#4E74FC] text-4xl" />
+                </Link>
+                <div>
+                  <h1 className="font-bold text-2xl lg:text-4xl">
+                    Activities <br />
+                    <span className="text-lg lg:text-2xl font-normal text-slate-500">
+                      Record your Activity
+                    </span>
+                  </h1>
+                </div>
+              </div>
               <button
                 onClick={() => setShowModal(true)}
-                className="bg-blue-500 px-6 py-2 text-white rounded-full text-right h-12 mt-4 lg:mt-0"
+                className="bg-blue-500 px-6 py-2 text-white rounded-full lg:text-right text-center h-12 mt-4 lg:mt-0"
                 type="button"
               >
                 Set Your Menu
