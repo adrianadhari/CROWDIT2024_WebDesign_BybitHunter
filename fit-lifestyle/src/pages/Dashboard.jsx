@@ -32,7 +32,7 @@ const Dashboard = () => {
                     </p>
                   </div>
                   <div className="w-1/3">
-                    <CircularProgress textSize="lg" targetPercentage={50} />
+                    <CircularProgress textSize="lg" targetPercentage={95} />
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Dashboard = () => {
                     <img src={Orang} alt="" className="w-16 h-16" />
                     <p className="text-slate-500 text-xl">
                       Distance <br />
-                      <span className="text-black text-2xl">4000</span> ft
+                      <span className="text-black text-2xl">4500</span> ft
                     </p>
                     <div>
                       <CircularProgress />

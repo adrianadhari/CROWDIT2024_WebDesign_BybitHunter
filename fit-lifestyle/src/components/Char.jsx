@@ -3,8 +3,8 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const Char = () => {
-  const targetCalories = 4000;
-  const targetPercentage = 90;
+  const targetCalories = 1900;
+  const targetPercentage = 85;
 
   const [calories, setCalories] = useState(0);
   const [percentage, setPercentage] = useState(0);

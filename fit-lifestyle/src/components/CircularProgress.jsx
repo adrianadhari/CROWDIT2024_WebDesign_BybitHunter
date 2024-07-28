@@ -3,7 +3,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import CountUp from "react-countup";
 
-const CircularProgress = ({ textSize = "3xl", targetPercentage = 70 }) => {
+const CircularProgress = ({ textSize = "3xl", targetPercentage = 95 }) => {
   const [percentage, setPercentage] = useState(0);
 
   useEffect(() => {
