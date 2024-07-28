@@ -27,9 +27,7 @@ const Dashboard = () => {
                       Heart Rate
                     </p>
                     <p className="text-slate-500 opacity-100">
-                      <span className="text-black text-xl lg:text-2xl">
-                        4000
-                      </span>{" "}
+                      <span className="text-black text-xl lg:text-2xl">85</span>{" "}
                       Bpm
                     </p>
                   </div>
