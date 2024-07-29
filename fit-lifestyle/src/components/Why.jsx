@@ -21,7 +21,7 @@ const Why = () => {
             Embark on Your Path to a Healthier, Happier Life with FitLifestyle
           </p>
         </div>
-        <div className="flex justify-center mt-16 xl:w-3/4 w-full mx-auto ">
+        <div className="flex justify-center mt-16 w-full">
           <CardList />
         </div>
       </div>

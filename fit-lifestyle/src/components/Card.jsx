@@ -3,6 +3,7 @@
 import img1 from "../assets/images/heart-health.png";
 import img2 from "../assets/images/efficient-calorie.png";
 import img3 from "../assets/images/easy-personalization.png";
+import img4 from "../assets/images/accurate-step.png";
 
 // data dummy
 const cards = [
@@ -10,21 +11,28 @@ const cards = [
     image: img1,
     title: "Heart Health Monitoring",
     description: "Get daily reports and tips to maintain a healthy heart.",
-    delay: 1100,
+    delay: 700,
   },
   {
     image: img2,
     title: "Efficient Calorie Counting",
     description:
       "FitLifestyle helps manage your calorie intake to meet your health objectives.",
-    delay: 1500,
+    delay: 850,
   },
   {
     image: img3,
     title: "Easy Personalization",
     description:
       "FitLifestyle personalizes based on your unique needs and goals",
-    delay: 1800,
+    delay: 1000,
+  },
+  {
+    image: img4,
+    title: "Accurate Step Tracking",
+    description:
+      "FitLifestyle uses advanced tech to accurately record every step.",
+    delay: 1200,
   },
 ];
 
@@ -50,8 +58,8 @@ const Card = ({ image, title, description, delay }) => {
 
 const CardList = () => {
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="flex">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
         {cards.map((card, index) => (
           <Card
             key={index}
